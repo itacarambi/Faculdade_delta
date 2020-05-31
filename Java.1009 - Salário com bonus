@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.text.DecimalFormat;
 public class MyClass {
     
     public static void main(String args[]) {
@@ -24,7 +25,7 @@ public class MyClass {
      double TOTAL = B+(C*15/100);
      
      System.out.println("Vendedor = " + A);
-     System.out.println("TOTAL = R$ " + TOTAL);
+     System.out.println("TOTAL = R$ " + new DecimalFormat("##0.00").format(TOTAL));
     }
     
 }
