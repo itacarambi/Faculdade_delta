@@ -26,7 +26,7 @@ public class MyClass {
      double Salário = B*C;
      
      System.out.println("Número = " + Número);
-     System.out.println("Salário =" + new DecimalFormat("##0.00").format(Salário));
+     System.out.println("Salário = R$" + new DecimalFormat("##0.00").format(Salário));
     }
     
 }
