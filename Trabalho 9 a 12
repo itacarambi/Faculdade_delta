@@ -1,0 +1,25 @@
+9 - Descreva o Binômio de Newton
+O Binômio de Newton refere-se a potência na forma (x + y)n , onde x e y são números reais e n é um número natural.
+O desenvolvimento do binômio de Newton em alguns casos é bastante simples. Podendo ser feita multiplicando-se diretamente todos os termos.
+Contudo, nem sempre é conveniente utilizar esse método, pois de acordo com o expoente, os cálculos ficarão extremamente trabalhosos.
+Exemplo
+Represente a forma expandida do binômio (4 + y)3:
+Como o expoente do binômio é 3, vamos multiplicar os termos da seguinte forma:
+(4 + y) . (4 + y) . (4 + y) = (16 + 8y + y2) . (4 + y) = 64 + 48y + 12y2 + y
+
+10 - Descreva o Algoritmo que calcule o MMC
+O MMC entre dois números naturais (vou me limitar ao conjunto dos números naturais) é o menor número natural que é múltiplo de ambos os números. Exemplos:
+o MMC de 24 e 12 é igual a 24;
+o MMC de 36 e 14 é igual a 252;
+o MMC de 11 e 9 é igual a 99.
+Um método seria fatorando os números em potências inteiras de números primos e multiplicando apenas as maiores potências de cada primo:
+60=22×3×560=22×3×5
+100=22×52100=22×52
+A maior potência de 22 é 2222. A maior potência de 33 é 33. A maior potência de 55 é 5252, logo
+MMC(60,100)=22×3×52=300MMC⁡(60,100)=22×3×52=300
+O problema dos métodos anteriores é que a fatoração de números inteiros é um problema NP, não existindo um algoritmo que possa fazer isso de maneira eficiente.
+
+11 - Descreva o Algoritmo que calcule o MDC
+O máximo divisor comum entre dois número pode ser determinado através de um algoritmo de 2300 anos (cerca de 300 A.C.), o algoritmo de Euclides. Para calcular o mdc(m,n) para 0 <= n < m, o algoritmo de Euclides usa a seguinte recorrência: mdc(m,0) == m; mdc(m,n) == mdc(n, m % n), para n > 0.
+12 - Descreva o Algoritmo de números perfeitos
+Em Matemática, um número perfeito é um número inteiro para o qual a soma de todos os seus divisores positivos próprios (excluindo ele mesmo) é igual ao próprio número. Euclides descobriu que os quatro primeiros números perfeitos são gerados pela fórmula: 2n-1(2n - 1): para n = 2: 21(22 - 1) = 6.
